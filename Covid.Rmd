@@ -33,7 +33,7 @@ countries <- sort(unique(data$Country.Region))[-c(which(sort(unique(data$Country
                                                   which(sort(unique(data$Country.Region)) == "US"),
                                                   which(sort(unique(data$Country.Region)) == "Australia"))]  
 selectInput("Country", label = h5("Country"),
-            choices =  sort(unique(data$Country.Region)),
+            choices =  countries,
             selected = "Spain")
 
 ```
