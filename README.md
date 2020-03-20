@@ -8,3 +8,4 @@ The data is from [this repository](https://github.com/CSSEGISandData/COVID-19), 
 
 
 
+![Dashboard](https://raw.githubusercontent.com/grayknight2/Covid-19-R-Dashboard/master/Covid-Dashboard.JPG)
