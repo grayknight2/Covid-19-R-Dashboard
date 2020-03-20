@@ -29,9 +29,11 @@ data <- read.csv(url("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/
 
 useShinyjs(rmd = TRUE)
 
-    
+countries <- sort(unique(data$Country.Region))[-c(which(sort(unique(data$Country.Region)) == "China"),
+                                                  which(sort(unique(data$Country.Region)) == "US"),
+                                                  which(sort(unique(data$Country.Region)) == "Australia"))]  
 selectInput("Country", label = h5("Country"),
-            choices =  sort(data$Country.Region),
+            choices =  sort(unique(data$Country.Region)),
             selected = "Spain")
 
 ```
