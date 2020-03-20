@@ -98,7 +98,7 @@ plot(as.numeric(data_cases[which(data_cases$Country.Region == input$Country),
  
  
 
-### Logaritmo casos confirmados
+### Log confirmed cases
 ```{r}
 
 renderPlot({
@@ -121,7 +121,7 @@ plot(log(as.numeric(data_cases[which(data_cases$Country.Region == input$Country)
 Column {data-width=600}
 -------------------------------------
 
-### Recuperados
+### Recovered
 
 ```{r}
 renderPlot({
@@ -257,7 +257,7 @@ plot(log(as.numeric(data_cases[which(data_cases$Province.State == input$Province
 Column {data-width=600}
 -------------------------------------
 
-### Recuperados
+### Recovered
 
 ```{r}
 renderPlot({
