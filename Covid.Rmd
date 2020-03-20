@@ -232,7 +232,7 @@ plot(as.numeric(data_cases[which(data_cases$Province.State == input$Province_Sta
  
  
 
-### Logaritmo casos confirmados
+### Log confirmed cases
 ```{r}
 
 renderPlot({
